@@ -1,0 +1,17 @@
+{
+    "name": "Web Speech AI Chatbot for covid",
+    "description": "covid hero",
+    "repository": "https://github.com/toure5013",
+    "keywords": ["ai", "api.ai", "bot", "w3c", "dialogflow"],
+    "env": {
+        "APIAI_TOKEN": {
+            "description": "API.ai Client access token",
+            "value": ""
+        },
+        "APIAI_SESSION_ID": {
+            "description": "An arbitrary string",
+            "value": ""
+        }
+    },
+    "image": "heroku/nodejs"
+}

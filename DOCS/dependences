@@ -1,0 +1,5 @@
+"apiai": "^4.0.3", ---> permet to use dialogflow sdk 
+"dotenv": "^4.0.0", ---> permet to set/get envrionement variable (this the cause of creating .env file)
+"ejs": "^2.5.6", ---> template engine
+"express": "^4.15.2", ---> express frameword for manage route in nodejs
+"socketio": "^1.0.0" ---> for made real time communications

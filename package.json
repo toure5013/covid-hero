@@ -1,0 +1,22 @@
+{
+    "name": "web-speech-ai",
+    "version": "1.0.0",
+    "description": "covid heor",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "TOURE SOULEYMANE",
+    "license": "MIT",
+    "dependencies": {
+        "apiai": "^4.0.3",
+        "dotenv": "^4.0.0",
+        "ejs": "^2.7.4",
+        "express": "^4.15.2",
+        "socketio": "^1.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
