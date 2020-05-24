@@ -26,6 +26,9 @@ const apiai = require('apiai')(APIAI_TOKEN);
 app.get('/', (req, res) => {
     res.render('index');
 });
+app.get('/home', (req, res) => {
+    res.render('index');
+});
 
 app.get('/dialogflow-messenger', (req,res)=>{
     res.render('diag-messenger');
