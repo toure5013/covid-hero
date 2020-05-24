@@ -24,18 +24,27 @@ const apiai = require('apiai')(APIAI_TOKEN);
 
 // Web UI
 app.get('/', (req, res) => {
-    res.render('index');
+    app.locals.hostshow = req.headers.host;
+    console.log(app.locals.hostshow )
+    res.render('home');
 });
 app.get('/home', (req, res) => {
+    app.locals.hostshow = req.headers.host;
     res.render('home');
 });
 
+app.get('/voice', (req, res) => {
+    app.locals.hostshow = req.headers.host;
+    res.render('voice');
+});
+
 app.get('/dialogflow-messenger', (req,res)=>{
-    res.render('diag-messenger');
+    app.locals.hostshow = req.headers.host;
+    res.render('home');
 });
 // Web UI
 app.use('**', (req, res) => {
-    res.render('index');
+    res.render('home');
 });
 
 io.on('connection', function(socket) {

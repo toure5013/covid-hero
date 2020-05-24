@@ -68,7 +68,12 @@ language-code="en"
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
             <h3 class="mb-5">Since the outcome of fast growing pandemic Covid-19 , it has become important for us as individual to keep a minimum distance from other well beings that we call as social distancing.To keep us aware and to answer our covid related queries we have developed a chatbot called covid-hero that will guide you throughout this global disaster.</h3>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+      
+            <% if (hostshow) { %>
+              <a href="<%=hostshow%>" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            <% } else { %>
+              <a href="#" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            <% } %>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
