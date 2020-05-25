@@ -2,40 +2,88 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="AI">
-    <meta name="author" content="TOURE SOULEYMANE toure5013@gmail.com">
-    <title>Covid hero </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Covid- hero</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="temp-assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="temp-assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="temp-assets/css/new-age.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
 </head>
 
-<body>
-    <df-messenger
-    intent="WELCOME"
-    chat-title="covid-hero"
-    agent-id="24ad3a06-a745-4281-8941-18329a3cb131"
-    language-code="en"
-    ></df-messenger>
-    <h1 class="text-white">AI </h1>
-    <section>
-        <!--div>
-        <img src="images/miet.png" style="width: 100px">
-      </div-->
-        <button><i class="fa fa-microphone"></i></button>
+<body style="height: 100%;">
 
-        <div>
-            <p class="text-white"> You said: <em class="output-you">...</em></p>
-            <p class="text-white">Bot replied: <em class="output-bot">...</em></p>
+    <df-messenger intent="WELCOME" chat-title="covid-hero" agent-id="24ad3a06-a745-4281-8941-18329a3cb131" language-code="en"></df-messenger>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Covid- hero</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/home#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/home#contact">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="/home#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </nav>
+
+    <header class="masthead" id="home">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h3 class="mb-5">
+                            <div>
+                                <p class="text-white"> <img src="images/hum.png" class="img-xs" style="width: 100px; height:70px;" alt=""> <em class="output-you">...</em></p>
+                                <p class="text-white"> <img src="images/chifa.png" class="img-xs" style="width: 100px; height:80px;" alt=""> <em class="output-bot">...</em></p>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-5 my-auto">
+                    <section>
+                        <button class="voiceOpener"><i class="fa fa-microphone"></i></button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </header>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/voice.js"></script>
 </body>
 
 </html>
